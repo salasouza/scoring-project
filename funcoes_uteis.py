@@ -1,5 +1,8 @@
 import pandas as pd 
 import numpy as np 
+from factor_analyzer import FactorAnalyzer
+from factor_analyzer.factor_analyzer import calculate_bartlett_sphericity
+from factor_analyzer.factor_analyzer import calculate_kmo
 
 
 class FuncoesUteis:
@@ -164,4 +167,58 @@ class FuncoesUteis:
         """ 
         data = data.loc[:, data.nunique() > 1]
         return data
+    
+    @staticmethod
+    def teste_esfericidade(data):
+        """
+        Esta função aplica o teste de esfericidade de Bartlett.
+        
+        Entrada:
+        data
+        
+        Saída:
+        bartelett:
+        p_value:
+        """
+        
+        bartlett, p_value = calculate_bartlett_sphericity(data)
+
+        print(f'Bartlett statistic: {bartlett}')
+
+        print(f'p-value : {p_value}')
+
+        if p_value < 0.05:
+            print('Rejeitamos a Hipótese Nula (A Matriz de correlação de Pearson não é igual a Matrix Identidade')
+        else:
+            print('Não Rejeitamos a Hipótese (A Matriz de correlação de Pearson é igual a Matriz Identidade')
+            
+        return bartlett, p_value
+    
+    @staticmethod
+    def teste_kmo(data):
+        """ 
+        Esta função realizar o calcula o KMO para verificar a adequação global da Análise Fatorial
+        
+        Entrada:
+        data: Dataframe
+        
+        Saida:
+        
+        kmo_model : float
+        """
+        kmo_all, kmo_model = calculate_kmo(data)
+        
+        if 1.0 >= kmo_model >= 0.9:
+            print("Adequação Global: Muito Boa")
+        elif 0.9 >= kmo_model >= 0.8:
+            print('Adequação Global: Boa')
+        elif 0.8 >= kmo_model >= 0.7:
+            print('Adequação Global: Média')
+        elif 0.7 >= kmo_model >= 0.6:
+            print("Adequação Global: Razoavél")
+        elif 0.6 >= kmo_model >= 0.5:
+            print("Adequação Global: Má")
+        else:
+            print("Adequação Global: Inaceitável") 
+        return kmo_all, kmo_model
     

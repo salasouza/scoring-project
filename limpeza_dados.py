@@ -109,3 +109,10 @@ class AplicacoesLimpeza(LimpezaDados):
         
         else:
             raise ValueError("Falha ao reconhecer o método! Use 'mean', 'mode' ou 'median'")
+        
+    def remover_variaveis_um_unico_valor(self, data: pd.DataFrame)-> pd.DataFrame:
+        """ 
+        Remove as colunas que apresentam apenas um único valore repetido
+        """ 
+        data = data.loc[:, data.nunique() > 1]
+        return data

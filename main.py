@@ -66,6 +66,8 @@ def main():
         print("Falha ao gerar os dados_resumo")
     else:
         print("Dados pronto para uso concluído!")
+        
+    dados_resumo = acoes_limpeza.remover_variaveis_um_unico_valor(data=dados_resumo)
     
     print()
     print("[DESCRITIVA]")
