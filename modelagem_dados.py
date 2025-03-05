@@ -10,10 +10,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class HandlePCA:
-    def __init__(self, n_components=2):
+    def __init__(self, n_components=20):
         self.n_components = n_components
 
-    def apply_pca(self, dados):
+    def PCAmodelo(self, dados):
         """
         Aplica PCA nos dados normalizados.
         """
@@ -24,10 +24,16 @@ class HandlePCA:
         columns = [f"PC{i+1}" for i in range(self.n_components)]
         pca_df = pd.DataFrame(principal_components, columns=columns)
         
+        print("Variância Explicada")
+        print("---")
+        print(pca.explained_variance_ratio_.cumsum())
+        print()
+        
         print("PCA aplicado com sucesso!")
+        print()
         return pca_df
     
-    def generate_ranking(self, pca_df):
+    def gerador_ranking(self, pca_df):
         """
         Gera o ranking baseado na primeira componente principal.
         """
