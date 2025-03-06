@@ -51,7 +51,7 @@ Explique detalhadamente o processo de construção do modelo.
 #### Instruções sobre o projeto
 O projeto tem dois formatos:
 
-**(A.) Parte de Notebooks para visualização dos detalhes**
+**(A.) Notebooks para visualização dos detalhes**
 1. AnaliseExploratoria.ipynb 
 2. Preprocessamento.ipynb 
 3. Scoring.ipynb 
