@@ -22,30 +22,31 @@ Explique detalhadamente o processo de construção do modelo.
 │   ├── raw
 │   │   └── sample.csv
 │   ├── processed
-│   │   ├── dados.csv
+│   │   ├── dados.csv       
 │   │   ├── dados_resumo.csv
 │   │   ├── dados_median.csv
-│   │   ├── dados_mode.csv
-│   │   └── dados_mean.csv
+│   │   ├── dados_mode.csv  
+│   │   └── dados_mean.csv  
 │   └── trusted
 │       ├── data_final.csv
-│       └── dados_pad.csv
+│       └── dados_pad.csv 
+├── scripts
+│   ├── __init__.py
+│   ├── carregamento_dados.py
+│   ├── limpeza_dados.py     
+│   ├── main.py
+│   ├── modelagem_dados.py   
+│   └── processamento_dados.py
+├── git_push.sh
 ├── README.md
-├── funcoes_uteis.py
-├── notebooks
-│   ├── AnaliseExploratoria.ipynb
-│   ├── Preprocessamento.ipynb
-│   ├── Scoring.ipynb
-│   ├── AnaliseExploratoria.html
-│   ├── Preprocessamento.html
-│   └── Scoring.html
-└── scripts
-    ├── __init__.py
-    ├── carregamento_dados.py
-    ├── limpeza_dados.py
-    ├── main.py
-    ├── modelagem_dados.py
-    └── processamento_dados.py
+└── notebooks
+    ├── AnaliseExploratoria.ipynb
+    ├── Preprocessamento.ipynb   
+    ├── Scoring.ipynb
+    ├── AnaliseExploratoria.html
+    ├── Preprocessamento.html
+    ├── Scoring.html
+    └── funcoes_uteis.py
 ```
 
 #### Instruções sobre o projeto
