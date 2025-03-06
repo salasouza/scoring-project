@@ -6,7 +6,7 @@ Nessa amostra existem clientes já “scorados” /qualificados e clientes que p
 
 ### Sobre os dados:
 
-Clique aqui para conferir a amostra de dados. Amostra de dados contendo diversas variáveis sobre os clientes.
+Amostra de dados contendo diversas variáveis sobre os clientes.
 Coluna alvo (target): indica se o cliente já foi qualificado (1) ou não (0).
 
 ### Desafio
