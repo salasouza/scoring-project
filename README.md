@@ -93,7 +93,8 @@ Calcular as medidas de tendências central (MTC) e as medidas de variabilidade d
     $\sigma$ é o desvio padrão dos dados.
 
 ### Fase de Modelagem:
-1. Identificar o tipo de tarefa, no caso do estudo é uma problema de classificação mais centrado em Machine Learning não Superbvisionado
+1. Identificar o tipo de tarefa: 
+    O estudo é uma tarefa de classificação e foi utilizado uma técnica de Machine Learning não Supervisionado.
 2. Para criar o score com base das variáveis descritivas foi utilizado a Análise Fatorial utilizando Componentes Principais para redução dimensional e utilizar um dos fatores para construir o Score para cada Id do Cliente.
 
 
