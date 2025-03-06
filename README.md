@@ -14,41 +14,42 @@ Coluna alvo (target): indica se o cliente já foi qualificado (1) ou não (0).
 Construa um modelo capaz de atribuir um score de 0 a 100 aos clientes que possuem a coluna (target) = 0.
 Explique detalhadamente o processo de construção do modelo.
 
-### Avaliação
-
-Será considerada a qualidade do código e a clareza da explicação da análise realizada.
-
-Estrutura do projeto:
+### Estrutura do projeto:
 
 ```
-├── README.md
-├── __init__.py
-├── carregamento_dados.py 
-├── processamento_dados.py
+.
 ├── storage
 │   ├── raw
-│   │   └── sample.csv       # Arquivo Original de Trabalho
+│   │   └── sample.csv
 │   ├── processed
-│   │   ├── dados.csv       
+│   │   ├── dados.csv
 │   │   ├── dados_resumo.csv
 │   │   ├── dados_median.csv
-│   │   ├── dados_mode.csv  
-│   │   └── dados_mean.csv  
+│   │   ├── dados_mode.csv
+│   │   └── dados_mean.csv
 │   └── trusted
 │       ├── data_final.csv
-│       └── dados_pad.csv 
-├── modelagem_dados.py
-├── requeriments.txt
-├── AnaliseExploratoria.ipynb
-├── Preprocessamento.ipynb
+│       └── dados_pad.csv
+├── README.md
 ├── funcoes_uteis.py
-├── Scoring.ipynb
-├── main.py                   
-├── limpeza_dados.py
+├── notebooks
+│   ├── AnaliseExploratoria.ipynb
+│   ├── Preprocessamento.ipynb
+│   ├── Scoring.ipynb
+│   ├── AnaliseExploratoria.html
+│   ├── Preprocessamento.html
+│   └── Scoring.html
+└── scripts
+    ├── __init__.py
+    ├── carregamento_dados.py
+    ├── limpeza_dados.py
+    ├── main.py
+    ├── modelagem_dados.py
+    └── processamento_dados.py
 ```
 
 #### Instruções sobre o projeto
-O projeto tem duas estruturas uma em notebooks.ipynb para visualização passo a passo:
+O projeto tem dois formatos:
 
 **(A.) Parte de Notebooks para visualização dos detalhes**
 1. AnaliseExploratoria.ipynb 
