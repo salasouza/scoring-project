@@ -76,15 +76,15 @@ Verificar se a amostra tem dados em formato int, float ou object.
 3. Fazer uma estatística descritiva:
 Calcular as medidas de tendências central (MTC) e as medidas de variabilidade do dataset.
 
-4. Executar ações para lidar com dados faltantes e com zeros
+4. Executar ações para lidar com dados faltantes e com zeros:
 
     4.1 Estipular um limite para remoção de colunas com =>40% de dados faltantes ou zeros;
 
     4.2 Fazer a imputação de dados baseados na média, moda ou mediana;
-    
+
     4.3 Elimintar as colunas com valores repetidos em 100% das vezes
 
-5. Padronizar os dados
+5. Padronizar os dados:
 
     5.1 Utilizar a padronização z-score:
 
@@ -95,7 +95,7 @@ Calcular as medidas de tendências central (MTC) e as medidas de variabilidade d
     $\mu$ é a média dos dados,
     $\sigma$ é o desvio padrão dos dados.
 
-### Fase de Modelagem:
+#### Fase de Modelagem:
 1. Identificar o tipo de tarefa: 
     O estudo é uma tarefa de classificação e foi utilizado uma técnica de Machine Learning não Supervisionado.
 2. Para criar o score com base das variáveis descritivas foi utilizado a Análise Fatorial utilizando Componentes Principais para redução dimensional e utilizar um dos fatores para construir o Score para cada Id do Cliente.
