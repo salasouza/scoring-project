@@ -82,7 +82,8 @@ Calcular as medidas de tendências central (MTC) e as medidas de variabilidade d
 4.3 Elimintar as colunas com valores repetidos em 100% das vezes
 
 5. Padronizar os dados
-5.1 Utilizar a padronização z-score:
+
+    5.1 Utilizar a padronização z-score:
 
     $$z = \frac{x - \mu}{\sigma}$$
 
