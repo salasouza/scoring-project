@@ -77,8 +77,11 @@ Verificar se a amostra tem dados em formato int, float ou object.
 Calcular as medidas de tendências central (MTC) e as medidas de variabilidade do dataset.
 
 4. Executar ações para lidar com dados faltantes e com zeros
+
     4.1 Estipular um limite para remoção de colunas com =>40% de dados faltantes ou zeros;
+
     4.2 Fazer a imputação de dados baseados na média, moda ou mediana;
+    
     4.3 Elimintar as colunas com valores repetidos em 100% das vezes
 
 5. Padronizar os dados
