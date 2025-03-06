@@ -83,14 +83,13 @@ Calcular as medidas de tendências central (MTC) e as medidas de variabilidade d
 
 5. Padronizar os dados
 5.1 Utilizar a padronização z-score:
-\[
-z = \frac{x - \mu}{\sigma}
-\]
+
+    $$z = \frac{x - \mu}{\sigma}$$
 
     Onde o:
-    \( x \) é o valor original,
-    \( \mu \) é a média dos dados,
-    \( \sigma \) é o desvio padrão dos dados.
+    $x$ é o valor original,
+    $\mu$ é a média dos dados,
+    $\sigma$ é o desvio padrão dos dados.
 
 ### Fase de Modelagem:
 1. Identificar o tipo de tarefa, no caso do estudo é uma problema de classificação mais centrado em Machine Learning não Superbvisionado
